@@ -1,0 +1,25 @@
+{
+  "name": "elearning-backend",
+  "version": "1.0.0",
+  "author": "Pham Van Dat",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "connect-redis": "^7.1.1",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "fs-extra": "^11.2.0",
+    "lodash": "^4.17.21",
+    "pg": "^8.11.3",
+    "pg-hstore": "^2.3.4",
+    "redis": "^4.6.13",
+    "sequelize": "^6.37.2"
+  },
+  "scripts": {
+    "dev": "node --env-file=.env --watch main.js"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.5"
+  }
+}
