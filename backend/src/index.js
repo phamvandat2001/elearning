@@ -40,9 +40,6 @@ module.exports = async (debug) => {
   // Apply necessary middlewares. Ex: app.use(...)
   require("./middlewares/index")(app);
 
-  // Models
-  await require("./models/index")(app);
-
   // Controllers
   require("./controllers/index")(app);
 
