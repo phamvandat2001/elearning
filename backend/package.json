@@ -21,7 +21,7 @@
     "sequelize": "^6.37.2"
   },
   "scripts": {
-    "be:dev": "node --env-file=.env --watch elearning.web.js"
+    "dev": "node --env-file=.env --watch elearning.web.js"
   },
   "devDependencies": {
     "dotenv": "^16.4.5"
