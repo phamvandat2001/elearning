@@ -1,16 +1,28 @@
 module.exports = (app) => {
-  app.get("/api/users", async (req, res) => {
+  app.get('/api/user', async (req, res) => {
     try {
-      const users = await app.model.users.findAll();
-      res.status(200).send({
-        message: 'success',
-        data: users
-      });
+      const items = await app.model.user.find({});
+      res.send({items});
     } catch (error) {
       console.error(error);
-      res.status(500).send({
-        message: 'Internal server error!',
-      });
+      res.send({ error: 'Internal system error!' });
     }
+  });
+
+  app.post('/api/user', async (req, res) => {
+    try {
+      const { email, password } = req.body;
+    } catch (error) {
+      console.error(error);
+      res.send({ error: 'Internal system error!' });
+    }
+  });
+
+  app.put('/api/user', async (req, res) => {
+
+  });
+
+  app.delete('/api/user', async (req, res) => {
+
   });
 };
