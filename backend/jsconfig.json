@@ -1,12 +1,13 @@
 {
   "compilerOptions": {
-    "target": "es6",
+    "target": "ES2023",
     "module": "commonjs",
-    "baseUrl": "./",
+    // "checkJs": true,
+    "baseUrl": ".",
     "paths": {
-      "*": ["src/*"]
+      "src/*": ["src/*"]
     }
   },
   "include": ["src/**/*"],
-  "exclude": ["node_modules", "**/*.spec.ts"]
+  "exclude": ["node_modules"]
 }

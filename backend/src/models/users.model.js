@@ -1,29 +1,18 @@
-module.exports = async (app, sequelize) => {
-  const { DataTypes } = require("sequelize");
+module.exports = (app, mongoose) => {
+    const userModel = new mongoose.Schema({
+        name: {
+            type: String,
+            max: 500,
+            trim: true
+        },
+        email: {
+            type: String,
+            max: 500
+        },
+        password: {
+            type: String
+        },
+    });
 
-  const userModel = sequelize.define("users", {
-    id: {
-      type: DataTypes.INTEGER,
-      primaryKey: true,
-      autoIncrement: true
-    },
-    last_name: {
-      type: DataTypes.STRING(100)
-    },
-    first_name: {
-      type: DataTypes.STRING(500)
-    },
-    email: {
-      type: DataTypes.STRING(200)
-    },
-    password: {
-      type: DataTypes.TEXT
-    }
-  }, {
-    timestamps: false,
-  });
-
-  await userModel.sync();
-
-  app.model.users = userModel;
-}
+    app.model.user = mongoose.model('users', userModel);
+};
