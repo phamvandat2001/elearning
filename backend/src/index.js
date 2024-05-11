@@ -31,7 +31,7 @@ module.exports = async (debug) => {
   // await require("./database/redis")(app);
 
   // Apply necessary middlewares. Ex: app.use(...)
-  // require("./middlewares/index")(app);
+  require("./middlewares/logger")(app);
 
   // Controllers
   require("./controllers/index")(app);
