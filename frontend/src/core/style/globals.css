@@ -1,0 +1,65 @@
+@tailwind base;
+
+@layer base {
+  h1 {
+    @apply text-4xl font-bold;
+  }
+  h2 {
+    @apply text-3xl font-bold;
+  }
+  h3 {
+    @apply text-2xl font-bold;
+  }
+  h4 {
+    @apply text-xl font-bold;
+  }
+  h5 {
+    @apply text-lg font-bold;
+  }
+  h6 {
+    @apply font-bold;
+  }
+  a {
+    @apply text-blue-600;
+  }
+}
+
+@tailwind components;
+@tailwind utilities;
+
+/* Import static fontawesome-free-6.6.0 */
+@import url('../../assets/fontawesome6/css/all.min.css');
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+* {
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+html {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  height: 100vh;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
