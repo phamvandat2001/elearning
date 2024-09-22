@@ -1,0 +1,16 @@
+{
+    "port": 8020,
+    "postgres": {
+        "host": "aws-0-ap-southeast-1.pooler.supabase.com",
+        "port": 6543,
+        "databaseName": "test-call-function",
+        "username": "postgres.mubgeibjsztmhrzvbsyp",
+        "password": "iJ-U3wqk*!hJNwi"
+    },
+    "redis": {
+        "host": "127.0.0.1",
+        "port": 6379
+    },
+    "jwtSecret": "DCzqLaX0DYB2BewDum4vgAOzxztyd4OxWF7TMGLYB20=",
+    "sessionSecret": "aP/HNp2mTNrGA1Uge+zR3buvFmvbJxAwejigqygvpYs="
+}

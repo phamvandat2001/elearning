@@ -1,0 +1,7 @@
+{
+    "verbose": true,
+    "ignore": ["*.test.js", "node_modules", "build"],
+    "watch": ["./src/**/*", "./config/**/*"],
+    "exec": "node ./src/app.js --mode development",
+    "ext" : "js,json"
+}
