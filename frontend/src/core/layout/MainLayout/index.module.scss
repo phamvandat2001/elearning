@@ -1,6 +1,14 @@
 .sider {
     @apply text-white;
-    background-color: black;
+    background-color: white;
+
+    & .logo {
+        height: 64px;
+        text-transform: uppercase;
+        font-size: xx-large;
+        padding: 10px 10px;
+        text-align: center;
+    }
 }
 
 .header {
@@ -8,5 +16,5 @@
 }
 
 .content {
-    @apply bg-white text-black;
+    @apply bg-white text-black p-3;
 }
